@@ -1,0 +1,11 @@
+BUTTONS:
+idle/selected = LIGHT BROWN
+hover = PINK
+
+For pages:
+idle = LIGHT BROWN
+selected = DARK BROWN
+hover = PINK
+
+ANIMATION:
+Have pause menu enter from bottom up

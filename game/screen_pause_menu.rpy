@@ -15,14 +15,14 @@ init python:
 screen pause_menu:
     style_prefix "pm"
     modal True
-    add "gui/overlay/menu_overlay.png"
+    add "gui/overlay/menu_overlay.webp"
 
     fixed:
         at ts_screenfadein()
 
-        add "gui/menubg/pause_background.png" align (0.5, 0.5)
+        add "gui/menubg/pause_background.webp" align (0.5, 0.5)
 
-        add "gui/history_line_divider.png" xalign 0.5 ypos 232
+        add "gui/history_line_divider.webp" xalign 0.5 ypos 232
 
         vbox:
             xysize (890, 580)
@@ -69,8 +69,8 @@ screen pause_menu:
 
         ## RETURN ##
         imagebutton:
-            idle "images/return_idle.png"
-            hover "images/return_hover.png"
+            idle "images/return_idle.webp"
+            hover "images/return_hover.webp"
             activate_sound "audio/sfx_click.ogg"
             pos (1135, 920)
             action Return()

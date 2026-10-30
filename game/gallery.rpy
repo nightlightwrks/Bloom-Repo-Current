@@ -11,7 +11,7 @@ init python:
     #albion cg
     g.button("albion1")
     g.condition("persistent.albion1")
-    g.image("images/AlbionCG1.png")
+    g.image("images/AlbionCG1.webp")
 
     g.button("albion2")
     g.condition("persistent.albion2")
@@ -20,29 +20,29 @@ init python:
     #felix cg
     g.button("felix1")
     g.condition("persistent.felix1")
-    g.image("images/FelixCG0.png")
-    g.image("images/FelixCG1.png")
+    g.image("images/FelixCG0.webp")
+    g.image("images/FelixCG1.webp")
 
     g.button("felix2")
     g.condition("persistent.felix2")
-    g.image("images/FelixCG2.png")
-    g.image("images/FelixCG3.png")
+    g.image("images/FelixCG2.webp")
+    g.image("images/FelixCG3.webp")
    
     #qwynn cg
     g.button("qwynn1")
     g.condition("persistent.qwynn1")
-    g.image("images/QwynnCG0.png")
-    g.image("images/QwynnCG1.png")
+    g.image("images/QwynnCG0.webp")
+    g.image("images/QwynnCG1.webp")
 
     g.button("qwynn2")
     g.condition("persistent.qwynn2")
-    g.image("images/QwynnCG2.png")
+    g.image("images/QwynnCG2.webp")
 
     #caelan cg
     g.button("caelan1")
     g.condition("persistent.caelan1")
-    #g.image("images/CaelanCG0.png")
-    #g.image("images/CaelanCG1.png")
+    #g.image("images/CaelanCG0.webp")
+    #g.image("images/CaelanCG1.webp")
 
     g.button("caelan2")
     g.condition("persistent.caelan2")
@@ -50,17 +50,17 @@ init python:
 
     THUMBNAIL_SIZE = (602, 338) 
 
-image albion_cg1_thumbnail = Transform("images/AlbionCG1.png", xysize=THUMBNAIL_SIZE)
-image felix_cg0_thumbnail = Transform("images/FelixCG0.png", xysize=THUMBNAIL_SIZE)
-image felix_cg2_thumbnail = Transform("images/FelixCG2.png", xysize=THUMBNAIL_SIZE)
-image qwynn_cg0_thumbnail = Transform("images/QwynnCG0.png", xysize=THUMBNAIL_SIZE)
-image qwynn_cg1_thumbnail = Transform("images/QwynnCG1.png", xysize=THUMBNAIL_SIZE)
-image qwynn_cg2_thumbnail = Transform("images/QwynnCG2.png", xysize=THUMBNAIL_SIZE)
-image cg_thumbnail_test = Transform("images/cg_test.png", xysize=THUMBNAIL_SIZE)
-image albion_locked_cg = Transform("gui/gallery/albion_locked.png", xysize=THUMBNAIL_SIZE)
-image felix_locked_cg = Transform("gui/gallery/felix_locked.png", xysize=THUMBNAIL_SIZE)
-image qwynn_locked_cg = Transform("gui/gallery/qwynn_locked.png", xysize=THUMBNAIL_SIZE)
-image caelan_locked_cg = Transform("gui/gallery/caelan_locked.png", xysize=THUMBNAIL_SIZE)
+image albion_cg1_thumbnail = Transform("images/AlbionCG1.webp", xysize=THUMBNAIL_SIZE)
+image felix_cg0_thumbnail = Transform("images/FelixCG0.webp", xysize=THUMBNAIL_SIZE)
+image felix_cg2_thumbnail = Transform("images/FelixCG2.webp", xysize=THUMBNAIL_SIZE)
+image qwynn_cg0_thumbnail = Transform("images/QwynnCG0.webp", xysize=THUMBNAIL_SIZE)
+image qwynn_cg1_thumbnail = Transform("images/QwynnCG1.webp", xysize=THUMBNAIL_SIZE)
+image qwynn_cg2_thumbnail = Transform("images/QwynnCG2.webp", xysize=THUMBNAIL_SIZE)
+image cg_thumbnail_test = Transform("images/cg_test.webp", xysize=THUMBNAIL_SIZE)
+image albion_locked_cg = Transform("gui/gallery/albion_locked.webp", xysize=THUMBNAIL_SIZE)
+image felix_locked_cg = Transform("gui/gallery/felix_locked.webp", xysize=THUMBNAIL_SIZE)
+image qwynn_locked_cg = Transform("gui/gallery/qwynn_locked.webp", xysize=THUMBNAIL_SIZE)
+image caelan_locked_cg = Transform("gui/gallery/caelan_locked.webp", xysize=THUMBNAIL_SIZE)
 
 transform ts_galSpriteAppear():
     zoom 1.3
@@ -74,15 +74,15 @@ screen gallery():
     tag menu
     default char = "albion"
 
-    add "gui/game_menu.png"
-    add "gui/gallery/gal_title.png" pos (1040, 40)
+    add "gui/game_menu.webp"
+    add "gui/gallery/gal_title.webp" pos (1040, 40)
 
 
     ## SPRITE ##
 
 
     if char == "albion":
-        add "images/Albion_N.png":
+        add "images/Albion_N.webp":
             xpos 80
             at ts_galSpriteAppear()
         textbutton "Coming Soon":
@@ -90,17 +90,17 @@ screen gallery():
             ypos 750
             
     if char == "felix":
-        add "images/Felix_N.png":
+        add "images/Felix_N.webp":
             xpos 80
             at ts_galSpriteAppear()
 
     if char == "qwynn":
-        add "images/Qwynn_Smile.png":
+        add "images/Qwynn_Smile.webp":
             xpos 80
             at ts_galSpriteAppear()
 
     if char == "caelan":
-        add "images/Caelan_S2.png":
+        add "images/Caelan_S2.webp":
             xpos 80
             at ts_galSpriteAppear()
         textbutton "Coming Soon":
@@ -154,8 +154,8 @@ screen gallery():
 
     ## RETURN ##
     imagebutton:
-        idle "images/return_idle.png"
-        hover "images/return_hover.png"
+        idle "images/return_idle.webp"
+        hover "images/return_hover.webp"
         activate_sound "audio/sfx_click.ogg"
         pos (1546, 940)
         action Return()

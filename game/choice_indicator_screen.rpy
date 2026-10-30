@@ -13,12 +13,12 @@
 
 define FELIX_COLOR = "#88e59a"
 
-image f01 = "gui/flowers/f01.png"
-image f02 = "gui/flowers/f02.png"
-image f03 = "gui/flowers/f03.png"
-image f04 = "gui/flowers/f04.png"
-image f05 = "gui/flowers/f05.png"
-image f06 = "gui/flowers/f06.png"
+image f01 = "gui/flowers/f01.webp"
+image f02 = "gui/flowers/f02.webp"
+image f03 = "gui/flowers/f03.webp"
+image f04 = "gui/flowers/f04.webp"
+image f05 = "gui/flowers/f05.webp"
+image f06 = "gui/flowers/f06.webp"
 
 # Change ts_speed to adjust speed.
 # Remeber to also adjust the screen timer.

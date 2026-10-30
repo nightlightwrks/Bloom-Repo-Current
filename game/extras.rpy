@@ -16,7 +16,7 @@ screen extra():
 
     tag menu
 
-    add "gui/overlay/afterstories.png"
+    add "gui/overlay/afterstories.webp"
     
     hbox:
             style_prefix "extra"
@@ -48,8 +48,8 @@ screen extra():
         
     ## RETURN ##
     imagebutton:
-            idle "images/return_idle.png"
-            hover "images/return_hover.png"
+            idle "images/return_idle.webp"
+            hover "images/return_hover.webp"
             activate_sound "audio/sfx_click.ogg"
             pos (1546, 940)
             action Return()
@@ -59,7 +59,7 @@ style extra_button:
     #properties gui.button_properties("navigation_button")
     #xoffset 570
     #yoffset -250
-    background "gui/button/title_bg.png"
+    background "gui/button/title_bg.webp"
     xysize (400, 50)
     #xalign 1.0
     idle_color "#6a4e3d"     

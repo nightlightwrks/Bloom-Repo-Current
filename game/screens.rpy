@@ -10,7 +10,7 @@ init offset = -1
 ## Custom Cursor
 ################################################################################
 
-define config.mouse = {"default":[ ("gui/cursor.png", 1, 1) ] }
+define config.mouse = {"default":[ ("gui/cursor.webp", 1, 1) ] }
 
 
 ################################################################################
@@ -55,23 +55,23 @@ style prompt_text is gui_text:
 
 style bar:
     ysize gui.bar_size
-    left_bar Frame("gui/bar/left.png", gui.bar_borders, tile=gui.bar_tile)
-    right_bar Frame("gui/bar/right.png", gui.bar_borders, tile=gui.bar_tile)
+    left_bar Frame("gui/bar/left.webp", gui.bar_borders, tile=gui.bar_tile)
+    right_bar Frame("gui/bar/right.webp", gui.bar_borders, tile=gui.bar_tile)
 
 style vbar:
     xsize gui.bar_size
-    top_bar Frame("gui/bar/bar_empty.png", gui.vbar_borders, tile=gui.bar_tile)
-    bottom_bar Frame("gui/bar/bar_full.png", gui.vbar_borders, tile=gui.bar_tile)
+    top_bar Frame("gui/bar/bar_empty.webp", gui.vbar_borders, tile=gui.bar_tile)
+    bottom_bar Frame("gui/bar/bar_full.webp", gui.vbar_borders, tile=gui.bar_tile)
 
 #if route = 'albion':
-    #thumb "gui/bar/_thumb.png"
+    #thumb "gui/bar/_thumb.webp"
 
 #TODO#
 
 style scrollbar:
     ysize 40
-    base_bar Frame("gui/slider/horizontal_[prefix_]bar.png", gui.scrollbar_borders, tile=gui.scrollbar_tile)
-    thumb "gui/slider/horizontal_[prefix_]thumb.png"
+    base_bar Frame("gui/slider/horizontal_[prefix_]bar.webp", gui.scrollbar_borders, tile=gui.scrollbar_tile)
+    thumb "gui/slider/horizontal_[prefix_]thumb.webp"
     thumb_offset -20
     unscrollable "hide"
     left_gutter 15
@@ -79,8 +79,8 @@ style scrollbar:
 
 style vscrollbar:
     xsize 40
-    base_bar Frame("gui/slider/vertical_[prefix_]bar.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
-    thumb "gui/slider/vertical_[prefix_]thumb.png"
+    base_bar Frame("gui/slider/vertical_[prefix_]bar.webp", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
+    thumb "gui/slider/vertical_[prefix_]thumb.webp"
     thumb_offset -20
     unscrollable "hide"
     top_gutter 15
@@ -88,16 +88,16 @@ style vscrollbar:
 
 style slider:
     ysize 40
-    base_bar Frame("gui/slider/horizontal_[prefix_]bar.png", gui.slider_borders, tile=gui.slider_tile)
-    thumb "gui/slider/horizontal_[prefix_]thumb.png"
+    base_bar Frame("gui/slider/horizontal_[prefix_]bar.webp", gui.slider_borders, tile=gui.slider_tile)
+    thumb "gui/slider/horizontal_[prefix_]thumb.webp"
     thumb_offset -20
     left_gutter 15
     right_gutter 15
 
 style vslider:
     xsize 40
-    base_bar Frame("gui/slider/vertical_[prefix_]bar.png", gui.vslider_borders, tile=gui.slider_tile)
-    thumb "gui/slider/vertical_[prefix_]thumb.png"
+    base_bar Frame("gui/slider/vertical_[prefix_]bar.webp", gui.vslider_borders, tile=gui.slider_tile)
+    thumb "gui/slider/vertical_[prefix_]thumb.webp"
     thumb_offset -20
     top_gutter 15
     bottom_gutter 15
@@ -105,7 +105,7 @@ style vslider:
 
 style frame:
     padding gui.frame_borders.padding
-    background Frame("gui/frame.png", gui.frame_borders, tile=gui.frame_tile)
+    background Frame("gui/frame.webp", gui.frame_borders, tile=gui.frame_tile)
 
 
 
@@ -173,7 +173,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Image("gui/textbox.webp", xalign=0.5, yalign=1.0)
 
 style namebox:
     xpos 130
@@ -182,7 +182,7 @@ style namebox:
     ypos -85
     ysize 100
 
-    background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
+    background Frame("gui/namebox.webp", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
 style say_label:
@@ -484,7 +484,7 @@ style navigation_button:
     #properties gui.button_properties("navigation_button")
     #xoffset 570
     #yoffset -250
-    background "gui/button/title_bg.png"
+    background "gui/button/title_bg.webp"
     xysize (400, 50)
     #xalign 1.0
     idle_color "#6a4e3d"     
@@ -548,7 +548,7 @@ style main_menu_frame:
     xsize 420
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    background "gui/overlay/main_menu.webp"
 
 style main_menu_vbox:
     xalign 1.0
@@ -592,34 +592,34 @@ screen game_menu(title, scroll=None, yinitial=0.0):
  
 
     if main_menu:
-        add "gui/bg1.png"
+        add "gui/bg1.webp"
     if renpy.get_screen("about"):
-        add "gui/overlay/menu_overlay.png"
-        add "gui/menubg/about_background.png" at truecenter
+        add "gui/overlay/menu_overlay.webp"
+        add "gui/menubg/about_background.webp" at truecenter
     elif renpy.get_screen ("extra"):
-        add "gui/overlay/menu_overlay.png"
-        add "gui/menubg/afterstories.png" at truecenter
+        add "gui/overlay/menu_overlay.webp"
+        add "gui/menubg/afterstories.webp" at truecenter
     elif renpy.get_screen("load"):
-        add "gui/overlay/menu_overlay.png"
-        add "gui/menubg/load_background.png" at truecenter
+        add "gui/overlay/menu_overlay.webp"
+        add "gui/menubg/load_background.webp" at truecenter
     elif renpy.get_screen("save"):
-        add "gui/overlay/menu_overlay.png"
-        add "gui/menubg/save_background.png" at truecenter
+        add "gui/overlay/menu_overlay.webp"
+        add "gui/menubg/save_background.webp" at truecenter
     elif renpy.get_screen("help"):
-        add "gui/overlay/menu_overlay.png"
-        add "gui/menubg/help_background.png" at truecenter
+        add "gui/overlay/menu_overlay.webp"
+        add "gui/menubg/help_background.webp" at truecenter
     elif renpy.get_screen ("preferences"):
-        add "gui/overlay/menu_overlay.png"
-        add "gui/menubg/settings_background.png" at truecenter
+        add "gui/overlay/menu_overlay.webp"
+        add "gui/menubg/settings_background.webp" at truecenter
         #textbutton _("HELP") action ShowMenu("help"):
             #pos (902,220)
-        # add "gui/menubg/settings_background.png" at truecenter
+        # add "gui/menubg/settings_background.webp" at truecenter
     elif renpy.get_screen ("history"):
-        add "gui/overlay/menu_overlay.png"
-        add "gui/menubg/log_background.png" at truecenter
+        add "gui/overlay/menu_overlay.webp"
+        add "gui/menubg/log_background.webp" at truecenter
     elif renpy.get_screen ("glossary"):
-        add "gui/overlay/menu_overlay.png"
-        add "gui/menubg/glossary_background.png" at truecenter
+        add "gui/overlay/menu_overlay.webp"
+        add "gui/menubg/glossary_background.webp" at truecenter
 
            
     else:
@@ -676,8 +676,8 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
 
     imagebutton:
-        idle "images/return_idle.png"
-        hover "images/return_hover.png"
+        idle "images/return_idle.webp"
+        hover "images/return_hover.webp"
         activate_sound "audio/sfx_click.ogg"
         xalign 0.0
         yalign 1.0
@@ -712,7 +712,7 @@ style game_menu_outer_frame:
     bottom_padding 45
     top_padding 180
     
-    #background "gui/main_menubg.png"
+    #background "gui/main_menubg.webp"
 
 
 style game_menu_navigation_frame:
@@ -774,7 +774,7 @@ screen about():
     use game_menu(_("ABOUT"), scroll="viewport"):
  
         style_prefix "about"
-        #add "gui/menu bg/about_background.png"
+        #add "gui/menu bg/about_background.webp"
 
 
 
@@ -921,7 +921,7 @@ screen file_slots(title):
                         xsize 905
                         ysize 170
 
-                        add FileScreenshot(slot, empty="gui/button/slot_locked.png"):
+                        add FileScreenshot(slot, empty="gui/button/slot_locked.webp"):
                             xalign 0.0
                             xsize 300
                             ysize 170
@@ -1030,18 +1030,18 @@ screen preferences():
                         style_prefix "radio"
                         #label _("~Display")
                     imagebutton: #_("Window") 
-                        idle "images/checkmark_idle.png"
-                        hover "images/checkmark_hover.png"
-                        selected_idle "images/checkmark_selected_idle.png"
-                        selected_hover "images/checkmark_selected_hover.png"
+                        idle "images/checkmark_idle.webp"
+                        hover "images/checkmark_hover.webp"
+                        selected_idle "images/checkmark_selected_idle.webp"
+                        selected_hover "images/checkmark_selected_hover.webp"
                         pos (610,405)
                         action Preference("display", "window")
 
                     imagebutton: #_("Fullscreen") 
-                        idle "images/checkmark_idle.png"
-                        hover "images/checkmark_hover.png"
-                        selected_idle "images/checkmark_selected_idle.png"
-                        selected_hover "images/checkmark_selected_hover.png"
+                        idle "images/checkmark_idle.webp"
+                        hover "images/checkmark_hover.webp"
+                        selected_idle "images/checkmark_selected_idle.webp"
+                        selected_hover "images/checkmark_selected_hover.webp"
                         pos (588, 447)
                         action Preference("display", "fullscreen")
 
@@ -1057,26 +1057,26 @@ screen preferences():
                     style_prefix "check"
                     #label _("~Skip")
                     imagebutton: #_("Unseen Text")
-                        idle "images/checkmark_idle.png"
-                        hover "images/checkmark_hover.png"
-                        selected_idle "images/checkmark_selected_idle.png"
-                        selected_hover "images/checkmark_selected_hover.png"
+                        idle "images/checkmark_idle.webp"
+                        hover "images/checkmark_hover.webp"
+                        selected_idle "images/checkmark_selected_idle.webp"
+                        selected_hover "images/checkmark_selected_hover.webp"
                         pos (567, 198)
                         action Preference("skip", "toggle")
                     
                     imagebutton: #_("After Choices")
-                        idle "images/checkmark_idle.png"
-                        hover "images/checkmark_hover.png"
-                        selected_idle "images/checkmark_selected_idle.png"
-                        selected_hover "images/checkmark_selected_hover.png"
+                        idle "images/checkmark_idle.webp"
+                        hover "images/checkmark_hover.webp"
+                        selected_idle "images/checkmark_selected_idle.webp"
+                        selected_hover "images/checkmark_selected_hover.webp"
                         pos (567, 215)                   
                         action Preference("after choices", "toggle")
 
                     imagebutton: #_("Transitions")
-                        idle "images/checkmark_idle.png"
-                        hover "images/checkmark_hover.png"
-                        selected_idle "images/checkmark_selected_idle.png"
-                        selected_hover "images/checkmark_selected_hover.png"
+                        idle "images/checkmark_idle.webp"
+                        hover "images/checkmark_hover.webp"
+                        selected_idle "images/checkmark_selected_idle.webp"
+                        selected_hover "images/checkmark_selected_hover.webp"
                         pos (567,233)                        
                         action InvertSelected(Preference("transitions", "toggle"))
 
@@ -1182,7 +1182,7 @@ style radio_vbox:
 
 style radio_button:
     properties gui.button_properties("radio_button")
-    foreground "gui/button/radio_[prefix_]foreground.png"
+    foreground "gui/button/radio_[prefix_]foreground.webp"
 
 style radio_button_text:
     properties gui.button_text_properties("radio_button")
@@ -1193,7 +1193,7 @@ style check_vbox:
 
 style check_button:
     properties gui.button_properties("check_button")
-    foreground "gui/button/check_[prefix_]foreground.png"
+    foreground "gui/button/check_[prefix_]foreground.webp"
 
 style check_button_text:
     properties gui.button_text_properties("check_button")
@@ -1226,11 +1226,11 @@ screen history():
     style_prefix "history"
     modal True
     predict False
-    add "gui/overlay/menu_overlay.png"
+    add "gui/overlay/menu_overlay.webp"
     fixed:
         at ts_screenfadein()
 
-        add "gui/menubg/log_background.png" align (0.5, 0.5)
+        add "gui/menubg/log_background.webp" align (0.5, 0.5)
 
         viewport:
             xysize (875, 550)
@@ -1263,7 +1263,7 @@ screen history():
                         size 30
                         
                 null height 50
-                add "gui/history_line_divider.png" xalign 0.5
+                add "gui/history_line_divider.webp" xalign 0.5
                 
 
             if not _history_list:
@@ -1271,8 +1271,8 @@ screen history():
 
         ## RETURN ##
         imagebutton:
-            idle "images/return_idle.png"
-            hover "images/return_hover.png"
+            idle "images/return_idle.webp"
+            hover "images/return_hover.webp"
             activate_sound "audio/sfx_click.ogg"
             pos (1135, 920)
             action Return()
@@ -1579,7 +1579,7 @@ screen confirm(message, yes_action, no_action):
 
     style_prefix "confirm"
 
-    add "gui/overlay/confirm.png"
+    add "gui/overlay/confirm.webp"
 
     frame:
 
@@ -1610,7 +1610,7 @@ style confirm_button is gui_medium_button
 style confirm_button_text is gui_medium_button_text
 
 style confirm_frame:
-    background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
+    background Frame([ "gui/confirm_frame.webp", "gui/frame.webp"], gui.confirm_frame_borders, tile=gui.frame_tile)
     padding gui.confirm_frame_borders.padding
     xalign .5
     yalign .5
@@ -1671,7 +1671,7 @@ style skip_triangle is skip_text
 
 style skip_frame:
     ypos gui.skip_ypos
-    background Frame("gui/skip.png", gui.skip_frame_borders, tile=gui.frame_tile)
+    background Frame("gui/skip.webp", gui.skip_frame_borders, tile=gui.frame_tile)
     padding gui.skip_frame_borders.padding
 
 style skip_text:
@@ -1715,7 +1715,7 @@ style notify_text is gui_text
 style notify_frame:
     ypos gui.notify_ypos
 
-    background Frame("gui/notify.png", gui.notify_frame_borders, tile=gui.frame_tile)
+    background Frame("gui/notify.webp", gui.notify_frame_borders, tile=gui.frame_tile)
     padding gui.notify_frame_borders.padding
 
 style notify_text:
@@ -1798,7 +1798,7 @@ style nvl_window:
     xfill True
     yfill True
 
-    background "gui/nvl.png"
+    background "gui/nvl.webp"
     padding gui.nvl_borders.padding
 
 style nvl_entry:
@@ -1873,27 +1873,27 @@ screen quick_menu():
 
 style window:
     variant "small"
-    background "gui/phone/textbox.png"
+    background "gui/phone/textbox.webp"
 
 style radio_button:
     variant "small"
-    foreground "gui/phone/button/radio_[prefix_]foreground.png"
+    foreground "gui/phone/button/radio_[prefix_]foreground.webp"
 
 style check_button:
     variant "small"
-    foreground "gui/phone/button/check_[prefix_]foreground.png"
+    foreground "gui/phone/button/check_[prefix_]foreground.webp"
 
 style nvl_window:
     variant "small"
-    background "gui/phone/nvl.png"
+    background "gui/phone/nvl.webp"
 
 style main_menu_frame:
     variant "small"
-    background "gui/phone/overlay/main_menu.png"
+    background "gui/phone/overlay/main_menu.webp"
 
 style game_menu_outer_frame:
     variant "small"
-    background "gui/phone/overlay/game_menu.png"
+    background "gui/phone/overlay/game_menu.webp"
 
 style game_menu_navigation_frame:
     variant "small"
@@ -1910,39 +1910,39 @@ style pref_vbox:
 style bar:
     variant "small"
     ysize gui.bar_size
-    left_bar Frame("gui/phone/bar/left.png", gui.bar_borders, tile=gui.bar_tile)
-    right_bar Frame("gui/phone/bar/right.png", gui.bar_borders, tile=gui.bar_tile)
+    left_bar Frame("gui/phone/bar/left.webp", gui.bar_borders, tile=gui.bar_tile)
+    right_bar Frame("gui/phone/bar/right.webp", gui.bar_borders, tile=gui.bar_tile)
 
 style vbar:
     variant "small"
     xsize gui.bar_size
-    top_bar Frame("gui/phone/bar/top.png", gui.vbar_borders, tile=gui.bar_tile)
-    bottom_bar Frame("gui/phone/bar/bottom.png", gui.vbar_borders, tile=gui.bar_tile)
+    top_bar Frame("gui/phone/bar/top.webp", gui.vbar_borders, tile=gui.bar_tile)
+    bottom_bar Frame("gui/phone/bar/bottom.webp", gui.vbar_borders, tile=gui.bar_tile)
 
 
 style scrollbar:
     variant "small"
     ysize gui.scrollbar_size
-    base_bar Frame("gui/phone/scrollbar/horizontal_[prefix_]bar.png", gui.scrollbar_borders, tile=gui.scrollbar_tile)
-    thumb Frame("gui/phone/scrollbar/horizontal_[prefix_]thumb.png", gui.scrollbar_borders, tile=gui.scrollbar_tile)
+    base_bar Frame("gui/phone/scrollbar/horizontal_[prefix_]bar.webp", gui.scrollbar_borders, tile=gui.scrollbar_tile)
+    thumb Frame("gui/phone/scrollbar/horizontal_[prefix_]thumb.webp", gui.scrollbar_borders, tile=gui.scrollbar_tile)
 
 style vscrollbar:
     variant "small"
     xsize gui.scrollbar_size
-    base_bar Frame("gui/phone/scrollbar/vertical_[prefix_]bar.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
-    thumb Frame("gui/phone/scrollbar/vertical_[prefix_]thumb.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
+    base_bar Frame("gui/phone/scrollbar/vertical_[prefix_]bar.webp", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
+    thumb Frame("gui/phone/scrollbar/vertical_[prefix_]thumb.webp", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
 
 style slider:
     variant "small"
     ysize gui.slider_size
-    base_bar Frame("gui/phone/slider/horizontal_[prefix_]bar.png", gui.slider_borders, tile=gui.slider_tile)
-    thumb "gui/phone/slider/horizontal_[prefix_]thumb.png"
+    base_bar Frame("gui/phone/slider/horizontal_[prefix_]bar.webp", gui.slider_borders, tile=gui.slider_tile)
+    thumb "gui/phone/slider/horizontal_[prefix_]thumb.webp"
 
 style vslider:
     variant "small"
     xsize gui.slider_size
-    base_bar Frame("gui/phone/slider/vertical_[prefix_]bar.png", gui.vslider_borders, tile=gui.slider_tile)
-    thumb "gui/phone/slider/vertical_[prefix_]thumb.png"
+    base_bar Frame("gui/phone/slider/vertical_[prefix_]bar.webp", gui.vslider_borders, tile=gui.slider_tile)
+    thumb "gui/phone/slider/vertical_[prefix_]thumb.webp"
 
 style slider_vbox:
     variant "small"
@@ -1969,12 +1969,12 @@ define FELIX_COLOR = "#51a34f"
 define QWYNN_COLOR = "#E45472"
 define CAELAN_COLOR = "#51ABE4"
 
-image f01 = "gui/flowers/f01.png"
-image f02 = "gui/flowers/f02.png"
-image f03 = "gui/flowers/f03.png"
-image f04 = "gui/flowers/f04.png"
-image f05 = "gui/flowers/f05.png"
-image f06 = "gui/flowers/f06.png"
+image f01 = "gui/flowers/f01.webp"
+image f02 = "gui/flowers/f02.webp"
+image f03 = "gui/flowers/f03.webp"
+image f04 = "gui/flowers/f04.webp"
+image f05 = "gui/flowers/f05.webp"
+image f06 = "gui/flowers/f06.webp"
 
 
 # Change ts_speed to adjust speed.
@@ -2090,8 +2090,8 @@ screen relationship_pts():
 
     tag menu
 
-    add "gui/overlay/game_menu.png"
-    #add "gui/affection/affection_title.png":
+    add "gui/overlay/game_menu.webp"
+    #add "gui/affection/affection_title.webp":
         #pos (60,100)
     
 
@@ -2113,17 +2113,17 @@ screen relationship_pts():
             
 
 
-    add route + "_Aff.png" at ts_spriteREnter():
+    add route + "_Aff.webp" at ts_spriteREnter():
         zoom 1.8
         pos (200, -150)
     
     
-    add route + "_title_card.png" at ts_spriteREnter():
+    add route + "_title_card.webp" at ts_spriteREnter():
         xpos 0.59
         ypos 90
 
         #if $ route = 'caelan' and $ persistent.caelanname == True
-            #add route + "caelan2_title_card.png" at ts_spriteREnter():
+            #add route + "caelan2_title_card.webp" at ts_spriteREnter():
                 # xpos 0.59
                 #ypos 90
 
@@ -2131,8 +2131,8 @@ screen relationship_pts():
 
     ## RETURN ##
     imagebutton:
-        idle "images/return_idle.png"
-        hover "images/return_hover.png"
+        idle "images/return_idle.webp"
+        hover "images/return_hover.webp"
         activate_sound "audio/sfx_click.ogg"
         xalign 0.0
         yalign 1.0
@@ -2160,7 +2160,7 @@ style rs_vbar:
     xalign 0.5
     xsize 251
     ysize 600
-    thumb "gui/affection/[route]_thumb.png"
+    thumb "gui/affection/[route]_thumb.webp"
     thumb_offset -100
 
 

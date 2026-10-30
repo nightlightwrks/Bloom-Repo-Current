@@ -80,11 +80,11 @@ screen glossary():
     modal True
     default page = "world"
 
-    add "gui/overlay/menu_overlay.png"
+    add "gui/overlay/menu_overlay.webp"
 
     fixed:
         at ts_screenfadein()
-        add "gui/menubg/glossary_background.png" align (0.5, 0.5) 
+        add "gui/menubg/glossary_background.webp" align (0.5, 0.5) 
 
         ### PAGES ###
         hbox:
@@ -111,8 +111,8 @@ screen glossary():
 
         ## RETURN ##
         imagebutton:
-            idle "images/return_idle.png"
-            hover "images/return_hover.png"
+            idle "images/return_idle.webp"
+            hover "images/return_hover.webp"
             activate_sound "audio/sfx_click.ogg"
             pos (1250, 920)
             action Return()

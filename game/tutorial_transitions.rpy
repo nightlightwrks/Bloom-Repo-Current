@@ -23,7 +23,7 @@ define im_anchor = (0.5, 1.0)
 
 
 # size: 800 x 1000
-image oli = Transform("Oliver_Sprite.png", anchor=im_anchor)
+image oli = Transform("Oliver_Sprite.webp", anchor=im_anchor)
 
 
 # Simple move Left, Right, Up, Down with ease

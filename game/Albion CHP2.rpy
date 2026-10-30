@@ -28,21 +28,21 @@ define Girl = Character ("Short-Haired Girl", color="#3a0f0c")
 
 init:
     image rain:
-        "rain1.png"
+        "rain1.webp"
         0.09
-        "rain3.png"
+        "rain3.webp"
         0.09
-        "rain2.png"
+        "rain2.webp"
         0.09
         repeat
 
 init:
     image rain2:
-        "rain1.png"
+        "rain1.webp"
         0.5
-        "rain3.png"
+        "rain3.webp"
         0.5
-        "rain2.png"
+        "rain2.webp"
         0.5
         repeat
 

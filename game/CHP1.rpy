@@ -1,4 +1,4 @@
-﻿# The script of the game goes in this file.
+# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -246,9 +246,6 @@ label chp1:
     scene market_dawn 
     with dissolve
 
-    play music "city_day.ogg" fadeout 2.0 fadein 2.0
-       
-    "Once the door is closed, the sounds of bubbling streams and overlapping voices come into focus."
    
 ############################################################
 # ALBION INTRO
@@ -764,8 +761,6 @@ label chp1:
     scene market_night with dissolve
 
     "The rest of my time at the market passes uneventfully, and after an hour or so, I'm weighed down by various bags of produce, meat, and a special jar of honey for Qwynn."
-    aside "(The only thing left to do now is find a carriage. Should be easy enough.)"
-    "Within the next few minutes, I flag down a carriage headed to Block 4 and soon enough I'm back at my apartment."
 
 ############################################################
 # DECOMPRESS
@@ -786,9 +781,6 @@ label chp1:
     "After thinking about it for a few moments, I settle on making something simple that still uses the sweet ingredient I bought."
     asidesm "(Honey pancakes it is.)"
     "I fall into a comfortable rhythm, finding myself lost in the motion of whisking and flipping 6 perfect pancakes."
-    aside "(3 for me and 3 for Qwynn.)" 
-    asidesh "({i}Orrr{/i}, maybe 2 for me and 4 for Qwynn? They can eat much more than I can.)"
-    aside "(Yeah, let's go with that.)"
     "As I cook, I use the time to reflect on my day, knowing that when Qwynn comes home, they'll want to hear everything."
     "It's a sort of tradition that whenever we have dinner together, Qwynn and I'll take turns telling each other about our days."
     aside "(It didn't happen today, but I should tell Qwynn about Sylphia's proposal. I didn't get the chance last night.)"
@@ -811,7 +803,7 @@ label Thought_Albion:
     asidesa "(Even so, the way he reacted earlier seemed out of character.)"
     aside "(Back when I first started working at Café Bloom, I made plenty of mistakes, but I had never heard Albion raise his voice like he did today.)"
     asidesa "(I've known Albion for almost a year now... And yet it seems that I still know next to nothing about him.)"
-    
+
 label Cortado_1:
  
     asidesa "(...I'll have to talk to him sooner or later. So I suppose there's no use thinking about it too hard.)"
@@ -819,8 +811,6 @@ label Cortado_1:
 ############################################################
 # DINNER?
 ############################################################
-
-    "As I reflect, I watch the last pancake cook on the stove until it browns enough for me to flip it over."
 
     play audio "dooropenclose.mp3"
 

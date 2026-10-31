@@ -44,14 +44,6 @@ label chp2:
     "So, all in all, I could see Qwynn, eat some good food, {i}and{/i} get in some good exercise."
     aside "(A good plan if I ever heard one.)"
 
-#SHOW NEW BG#
-    show kitchen_dawn with dissolve
-
-    "The kitchen is empty when I enter and a glance down the hallway reveals that Qwynn's light is still off."
-    aside "(I'll try to be quiet.)"
-    "I gather my things quietly and slip out the front door, doing my best to avoid waking Qwynn."
-
-
 ########################################
 # RUMORS
 ########################################
@@ -62,10 +54,7 @@ label chp2:
     "The sun has risen, but the streets aren't crowded quite yet. {i}That{/i} will come in the next few hours." 
     "And so, I stroll slowly—basking in the atmosphere of the early morning..."
     "I decide to take the ferry to the café again this morning. It's faster and more relaxing than taking a carriage."
-    "Plus, on a morning as nice as this, I could sit back, relax, and take in the view from the deck."
-    "The sounds of rushing water grow louder, signaling my arrival at the dock."
     aside "(Perfect timing! The ferry's already here.)"
-    "The ferry looks to be about halfway full leaving plenty of open seating."
     "It only takes a few moments for me to settle into a seat near the railing."
     "To my right, I hear excited chatter coming from a group of young teenagers."
     Dryad "{i}I{/i} heard my friend say she caught a glimpse of Saint Caelan the other day!"
@@ -78,7 +67,6 @@ label chp2:
     "They continue, gossiping about other various 'sightings' related to the Saint, but nothing they say is new information."
     "There's a constant stream of rumors regarding Saint Caelan, but at the end of the day no one had really seen them with their own eyes."
     "It's always 'My friend said—' or 'I heard from so and so that—'."
-    "Each of the Integrative Cities has a Dragon Saint who lives among them, but {i}our{/i} Saint, the Water Saint, hasn't been spotted in over two decades—after access to the Sanctuary was cut off." 
     asidesh "(I won't lie and say I'm not curious myself, but whatever reason the Saint has for keeping to themselves is their own.)"
     aside "(Though not an all-powerful being, it feels wrong to spread rumors about the Saint considering it's their power that keeps Halis' waters clean and safe.)"
     
@@ -305,7 +293,6 @@ label chp2:
     scene market with dissolve
     play music "city_day.ogg" fadeout 2.0 fadein 2.0
    
-    aside "(Okay, now to go see Qywnn.)"
     "Qwynn's shop is located right near the southern gate, making it a prime location for an accessory and clothing boutique."
     "When Qwynn and I first moved in together, we were working in the same restaurant, but their goal had always been to open a boutique."
     "Almost a year ago now Qwynn had finally opened their own store in a good location, quickly becoming a local favorite."
@@ -462,10 +449,8 @@ label Market_Felix:
     scene market with dissolve
     play music "city_day.ogg" fadein 2.0
     
-    "After I leave Qwynn's shop, I decide to walk around the rest of Block 1, which has more shops than the other blocks."
     "The main road is lined with market stalls, taking advantage of the increase in tourists that the city experiences every weekend."
     aside "(I could wander here for hours...)"
-    "With so many different races from both inside and outside of Halis, the selection at the markets is limitless."
     "With my mind set on finding lunch, I simply follow the smells of food to find where vendors have set up shop for the afternoon."
     "I end up in a cluster of stalls selling various local specialties from nearby villages." 
     "Lines are already starting to form, so I quickly scan the area, though it's hard to really see anything."
@@ -807,12 +792,8 @@ label on_track:
     "The door to my apartment shuts quietly behind me. Though I wasn't out for the full day, I can still feel a satisfying exhaustion settling into my bones."
     asidesa "(I still have a handful of hours before I have to worry about dinner.)"
     aside "(Guess I could get some chores done. Might as well keep going while I have the motivation.)"
-    "Qwynn and I tend to keep the apartment pretty neat. Whenever one of us has the time, we try to do a little cleaning."
-    "It ends up working well, but if one of us {i}does{/i} ever need help, we would just ask."
     "I spend the next couple hours cleaning. It's soothing, and something I actually enjoy doing, even though it's a day off."
-    "It feels good to be doing something with my time instead of relaxing..."
-    asidesh "(What can I say— I like to be busy.)"
-    
+    "It feels good to be doing something productive with my time."
     scene kitchen_night with dissolve
     play audio "dooropenclose.mp3"
 
@@ -839,7 +820,7 @@ label on_track:
 
     "They reach down, and from the bags on the floor, Qwynn brings out a container of food." 
     "My stomach growls loudly in response."
-    "...I'd gotten so absorbed in cleaning that I didn't realize how late it'd gotten."
+    "...I'd gotten so absorbed in cleaning that I didn't realize how late its gotten."
 
     show Qwynn_S at half_size with dissolve
 

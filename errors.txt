@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/Caelan_ending.rpy", line 441: Indentation mismatch.
-    "Hug them.":
+File "game/CHP3.rpy", line 393: unterminated string literal
+    asidee "Fine! I just really need my notebook—" I've had an epiphany!"
 
-Ren'Py Version: Ren'Py 8.5.3.26012801+nightly
-Sat Jul 25 13:30:24 2026
+Ren'Py Version: Ren'Py 8.5.3.26051504
+Sat Oct 31 14:22:24 2026

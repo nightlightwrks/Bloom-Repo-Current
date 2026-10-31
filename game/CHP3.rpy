@@ -36,7 +36,6 @@ label chp3:
     who "Apologies, you {i}are{/i} open right?"
     asidesp2 "Yes! We are. How can I help you?"
     who "Oh, perfect. I was hoping you could help me with a special request."
-    asidesh2 "(Depending on what it is…)"
     aside2 "Sure!"
     "The woman smiles. A faint thing."
     who "Today is my… friend's birthday. I want to bring them something special. They have a soft spot for anything warm."
@@ -347,7 +346,7 @@ label chp3_choice:
     aside "She laid out three options, each with their own perks."
     asidesh "The problem is, she asked {i}me{/i} to decide which of the three to go with."
     f "Sounds like she trusts you."
-    aside "Yeah. That's what I keep telling myself. But— I have no clue how I'm supposed to choose."
+    aside "Yeah. That's what I keep telling myself. But, I have no clue how I'm supposed to choose."
     asidesp "Any one of them would be good for business."
     asidesh "They're all great… I wish I could just choose them all."
     f "Bigger isn't always better… I learned that the hard way." 
@@ -391,7 +390,8 @@ label chp3_choice:
     show Qwynn_N3 at half_size 
 
     q "Saints—! You okay, Aste?"
-    asidee "Fine! I just really need my notebook, I've had an epiphany!"
+    asidee "Fine! I just really need my notebook—" 
+    asidee "I've had an epiphany!"
     "The smile that splits my face is so wide, I know I must look half crazed. Still, I can't help it."
     "Already Qwynn is reaching for the leather bound book which happened to be lying nearby."
     
